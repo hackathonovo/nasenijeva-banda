@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        >
+    
+        <ImageView
+            android:id="@+id/member_avatar"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:paddingLeft="16dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_account_circle_black_48dp" />
+    
+        <TextView
+            android:id="@+id/member_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="John Doe"
+            android:paddingLeft="72dp"
+            android:layout_centerVertical="true"
+            />
+    
+        <ImageView
+            android:id="@+id/member_button_more_info"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:paddingRight="16dp"
+            android:foregroundGravity="right"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_keyboard_arrow_down_black_36dp"
+            android:layout_centerVertical="true"
+            />
+    
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/member_expanded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:padding="4dp"
+                android:layout_marginLeft="24dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_title_black_24dp" />
+
+            <TextView
+                android:id="@+id/member_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Not specified"
+                android:padding="8dp"
+                android:layout_marginLeft="76dp"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:padding="4dp"
+                android:layout_marginLeft="24dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_home_black_24dp" />
+
+            <TextView
+                android:id="@+id/member_home_station"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Not specified"
+                android:paddingLeft="84dp"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:padding="4dp"
+                android:layout_marginLeft="24dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_event_available_black_24dp" />
+
+            <TextView
+                android:id="@+id/member_availability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="4dp"
+                android:layout_marginLeft="24dp"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:padding="4dp"
+                android:layout_marginLeft="24dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_verified_user_black_24dp" />
+
+            <TextView
+                android:id="@+id/member_skills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Special skills"
+                android:paddingLeft="84dp"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

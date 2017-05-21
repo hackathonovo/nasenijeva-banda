@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        >
+    
+        <ImageView
+            android:id="@+id/member_avatar"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_account_circle_black_48dp"
+
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            >
+            <TextView
+                android:id="@+id/member_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="John Doe"
+                android:paddingLeft="72dp"
+
+                />
+
+            <TextView
+                android:id="@+id/member_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Pending..."
+                android:textColor="@android:color/holo_red_dark"
+                android:paddingLeft="72dp"
+
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                />
+        </LinearLayout>
+    
+        <!--<ImageView-->
+            <!--android:id="@+id/image_check_mark"-->
+            <!--android:layout_width="36dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:paddingRight="16dp"-->
+            <!--android:foregroundGravity="right"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:src="@drawable/ic_check_black_36dp"-->
+            <!--app:layout_constraintRight_toLeftOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="parent"-->
+            <!--app:layout_constraintBottom_toTopOf="parent"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--/>-->
+
+        <ImageView
+            android:id="@+id/image_send_message"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="16dp"
+            android:foregroundGravity="right"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_message_black_36dp"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/image_phone_call"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginEnd="16dp"
+            android:foregroundGravity="right"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_phone_black_36dp"
+            app:layout_constraintRight_toLeftOf="@id/image_send_message"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            android:layout_centerVertical="true"
+            />
+    
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
